@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Account - Sathapana Bank</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .page-banner img {
+        width: 100%;
+        height: auto;
+        }
+
+        .page-content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* General styling for the features and benefits section */
+        .features-benefits {
+            margin-top: 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        .features-benefits h2 {
+            color: #003b7e; /* Sathapana Bank's brand color */
+            border-bottom: 2px solid #003b7e;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Table styling */
+        .features-benefits table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .features-benefits th, 
+        .features-benefits td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .features-benefits th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            color: #003b7e; /* Sathapana Bank's brand color */
+        }
+
+        .features-benefits td {
+            background-color: #ffffff;
+        }
+
+        .features-benefits td:first-child {
+            font-weight: bold;
+            background-color: #003b7e;
+            color: #ffffff;
+            width: 40%; 
+        }
+
+        .features-benefits td ul {
+            margin: 0;
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        .features-benefits p {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        .features-benefits a {
+            color: #003b7e;
+            text-decoration: underline;
+        }
+
+        /* Additional padding for the last cell to align with the content properly */
+        .features-benefits td[colspan="2"] {
+            padding: 10px 20px;
+        }
+
+        .page-content h1 {
+            color: #003b7e;
+            font-size: 40px;
+        }
+        .page-content h1 span{
+            color: aqua;
+
+        }
+        /* how to apply */
+        .how-to-apply {
+        font-family: Arial, sans-serif;
+        color: #003b7e;
+        margin: 30px 0;
+        }
+
+    .how-to-apply p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .how-to-apply h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: #003b7e;
+        border-bottom: 2px solid #003b7e;
+        padding-bottom: 10px;
+    }
+
+    .how-to-apply .apply-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .how-to-apply .option {
+        width: 45%;
+        display: flex;
+        align-items: flex-start;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .how-to-apply .option img {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    .how-to-apply .option h3 {
+        font-size: 18px;
+        margin: 0 0 10px 0;
+        color: #003b7e;
+        text-align: left;
+        
+    }
+
+    .how-to-apply .option p {
+        font-size: 14px;
+        color: #333;
+        text-align: left;
+    }
+
+    .how-to-apply .option a {
+        color: #003b7e;
+        text-decoration: none;
+    }
+
+    .how-to-apply .option a:hover {
+        text-decoration: underline;
+    }
+    
+</style>
+
+    </style>
+</head>
+<body>
+    <!-- Copy header from index.html -->
+    <header>
+        <div class="top-bar">
+            <div class="left">
+              <span>Premier</span>
+              <span>Personal Banking</span>
+              <span>Business Portal</span>
+            </div>
+            <div class="right">
+              <span>About Us</span>
+              <span>Help Center</span>
+              <span>Postcard</span>
+              
+            </div>
+          </div>
+          <div class="main-header">
+            <a href="../index.html" class="logo-link">
+              <img src="../img/STPN_Logo_Horiz_CMYK_FA-01.png" alt="Company Logo" class="logo">
+            </a>
+            <nav class="main-nav">
+              <ul class="nav-list">
+                <li class="nav-item personal">
+                  <a href="#" class="nav-link">PERSONAL </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="open_saving.html" class="dropdown-item">Saving Account</a></li>
+                    <li><a href="#" class="dropdown-item"> Credits</a></li>
+                    <li><a href="#" class="dropdown-item"> Term Deposits</a></li>
+                    <li><a href="#" class="dropdown-item">Cash Management</a></li>
+                    <li><a href="#" class="dropdown-item">Service</a></li>
+                    <li><a href="#" class="dropdown-item">Trade Finance</a></li>
+                    <li><a href="#" class="dropdown-item">Securities & Trust Services</a></li>
+                    <li><a href="#" class="dropdown-item">Corporate Agent Life Insurance Service</a></li>
+                    <li><a href="#" class="dropdown-item">card</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">BUSINESS</a>
+                  <!-- Similar dropdown structure for Business if needed -->
+                  <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Credits</a></li>
+                    <li><a href="#" class="dropdown-item">Deposits</a></li>
+                    <li><a href="#" class="dropdown-item">Cash Management</a></li>
+                    <li><a href="#" class="dropdown-item">Express Banking Service</a></li>
+                    <li><a href="#" class="dropdown-item">Trade Finance</a></li>
+                    <li><a href="#" class="dropdown-item">Securities & Trust Services</a></li>
+                    <li><a href="#" class="dropdown-item">Corporate Agent Life Insurance Service</a></li>
+                    <li><a href="#" class="dropdown-item">Financial Health Check</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Digital Banking</a>
+                  <!-- Similar dropdown structure for Business if needed -->
+                  <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Sathapana MOBILE</a></li>
+                    <li><a href="#" class="dropdown-item">Sathapana Rewards</a></li>
+                    <li><a href="#" class="dropdown-item">Security Tips</a></li>
+                    <li><a href="#" class="dropdown-item">Mobile</a></li>
+                    <li><a href="#" class="dropdown-item">S2Biz</a></li>
+                    <li><a href="#" class="dropdown-item">Sathapana ePayroll</a></li>
+                    <li><a href="#" class="dropdown-item">Sathapana Gateway</a></li>
+                    <li><a href="#" class="dropdown-item">ATM Service</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Women In Business</a>
+                  <!-- Similar dropdown structure for Business if needed -->
+                  <!-- <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Credits</a></li>
+                    <li><a href="#" class="dropdown-item">Deposits</a></li>
+                    <li><a href="#" class="dropdown-item">Cash Management</a></li>
+                    <li><a href="#" class="dropdown-item">Funds Transfers</a></li>
+                    <li><a href="#" class="dropdown-item">Trade Finance</a></li>
+                    <li><a href="#" class="dropdown-item">Securities & Trust Services</a></li>
+                    <li><a href="#" class="dropdown-item">Corporate Agent Life Insurance Service</a></li>
+                    <li><a href="#" class="dropdown-item">Financial Health Check</a></li>
+                  </ul> -->
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Promotion</a>
+                  <!-- Similar dropdown structure for Business if needed -->
+                  <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Credits</a></li>
+                    <li><a href="#" class="dropdown-item">Deposits</a></li>
+                    <li><a href="#" class="dropdown-item">Cash Management</a></li>
+                    <li><a href="#" class="dropdown-item">Funds Transfers</a></li>
+                    <li><a href="#" class="dropdown-item">Trade Finance</a></li>
+                    <li><a href="#" class="dropdown-item">Securities & Trust Services</a></li>
+                    <li><a href="#" class="dropdown-item">Corporate Agent Life Insurance Service</a></li>
+                    <li><a href="#" class="dropdown-item">Financial Health Check</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">New</a>
+                  <!-- Similar dropdown structure for Business if needed -->
+                  <!-- <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Credits</a></li>
+                    <li><a href="#" class="dropdown-item">Deposits</a></li>
+                    <li><a href="#" class="dropdown-item">Cash Management</a></li>
+                    <li><a href="#" class="dropdown-item">Funds Transfers</a></li>
+                    <li><a href="#" class="dropdown-item">Trade Finance</a></li>
+                    <li><a href="#" class="dropdown-item">Securities & Trust Services</a></li>
+                    <li><a href="#" class="dropdown-item">Corporate Agent Life Insurance Service</a></li>
+                    <li><a href="#" class="dropdown-item">Financial Health Check</a></li>
+                  </ul> -->
+                </li>
+                <li class="nav-item">
+                    <!-- <a href="#" class="nav-link">New</a> -->
+                    <input type="text" class="search-input" placeholder="Search" style="display: none;">
+                    <img src="../img/hompage_icon/search-icon.png" alt="Search" class="search-icon" style="width: 30px; height: 30px;
+                      " onclick="showSearchInput()" >
+                </li>
+              </ul>
+            </nav>
+          </div>
+    </header>
+
+    <main>
+        <!-- Savings Account specific content will go here -->
+        <section class="page-banner">
+            <img src="../img/banner-consol/saving.jpg" alt="Savings Account Banner">
+        </section>
+    
+        <section class="page-content">
+            <h1>Savings <span>Account</span></h1>
+            <p>Start preparing for your future with a Sathapana Bank Savings Account. Aside from earning a daily interest rate, which can be paid out monthly, the Sathapana Bank Savings Account provides a very convenient way to manage and access your money.</p>
+            
+            <p>Available in Khmer Riel, US Dollar, or Thai Baht.</p>
+            
+            <p>Deposit and withdraw funds anytime from our extensive network of ATMs throughout Cambodia. With a minimum of USD10 (KHR40, 000) deposit to open a savings account, you are on your way to a secured financial future.</p>
+    
+            <div class="features-benefits">
+                <h2>Features & Benefits</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>USD</th>
+                            <th>KHR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Minimum Opening Balance</td>
+                            <td>USD 10</td>
+                            <td>KHR 40,000</td>
+                        </tr>
+                        <tr>
+                            <td>Minimum Ongoing Balance</td>
+                            <td>USD 5</td>
+                            <td>KHR 20,000</td>
+                        </tr>
+                        <tr>
+                            <td>Interest Rate</td>
+                            <td>0.25% p.a.</td>
+                            <td>0.75% p.a.</td>
+                        </tr>
+                        <tr>
+                            <td>Interest Payment</td>
+                            <td colspan="2">Daily accrued interest and Semi-annual paid</td>
+                        </tr>
+                        <tr>
+                            <td>Entitles</td>
+                            <td colspan="2">Visa Debit Card</td>
+                        </tr>
+                        <tr>
+                            <td>Benefits</td>
+                            <td colspan="2">
+                                <ul>
+                                    <li>No account maintenance fees</li>
+                                    <li>Performs Banking transactions conveniently with our wide networks of ATMs and Branches</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Note*: Interest rates are subject to change at the Bank's sole discretion without prior notice to clients.</p>
+                
+            </div>
+            
+        </section>
+        <section class="how-to-apply">
+            <p>For more detailed information please click <a href="#">here.</a></p>
+            <h2>How to Apply</h2>
+            <div class="apply-options">
+                <div class="option">
+                    <img src="../img/banner-consol/visit-branches.png" alt="Visit Our Branches">
+                    <h3>Visit Our Branches <br> <p>Meet our expert who will warmly welcome and guide you through the process.</p></h3>
+                    
+                </div>
+                <div class="option">
+                    <img src="../img/banner-consol/phone.png" alt="Contact Our 24/7 Hotline">
+                    <h3>Contact Our 24/7 Hotline <br> <p>Contact us via our Hotline +855 (0) 23 | 81 999 010 for more information.</p></h3>
+                    
+                </div>
+                <div class="option">
+                    <img src="../img/banner-consol/mail.png" alt="Email Us">
+                    <h3>Email Us <br> <p>Email us at <a href="mailto:customercare@sathapana.com.kh">customercare@sathapana.com.kh</a> for more information.</p></h3>
+                    
+                </div>
+                <div class="option">
+                    <img src="../img/banner-consol/sms.png" alt="Online Inquiry Form">
+                    <h3>Online Inquiry Form <br> <p>Complete online inquiry form <a href="#">here.</a> Our team will contact you as soon as possible.</p></h3>
+                    
+                </div>
+            </div>
+            
+        </section>
+        
+    </main>
+
+    <!-- Copy footer from index.html -->
+    <footer class="footer">
+      <div class="footer-content">
+          <div class="footer-section logo-social">
+              <img src="../img/img-footer/footer-logo.png" alt="Sathapana Bank Logo" class="logo">
+              <div class="social-icons">
+                  <a href="#"><img src="../img/img-footer/fb.png" alt="Facebook" class="social-icon"></a>
+                  <a href="#"><img src="../img/img-footer/linkin.png" alt="LinkedIn" class="social-icon"></a>
+                  <a href="#"><img src="../img/img-footer/yt-spn.png" alt="YouTube" class="social-icon"></a>
+                  <a href="#"><img src="../img/img-footer/tiktok.png" alt="TikTok" class="social-icon"></a>
+                  <a href="#"><img src="../img/img-footer/telegram.png" alt="Telegram" class="social-icon"></a>
+              </div>
+              <div class="certification">
+                  <img src="../img/img-footer/sisa.png" alt="SISA">
+                  
+              </div>
+          </div>
+          <div class="footer-section links">
+              <h4>Banking Service</h4>
+              <ul>
+                  <li><a href="#">Personal</a></li>
+                  <li><a href="#">Business</a></li>
+                  <li><a href="#">Digital</a></li>
+                  <li><a href="#">Cash Management</a></li>
+                  <li><a href="#">Merchant Listing</a></li>
+              </ul>
+          </div>
+          <div class="footer-section links">
+              <h4>Explore Sathapana</h4>
+              <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Career</a></li>
+                  <li><a href="#">Locator</a></li>
+                  <li><a href="#">Calculator</a></li>
+                  <li><a href="#">CSR</a></li>
+              </ul>
+          </div>
+          <div class="footer-section links">
+              <h4>Investor Relations</h4>
+              <ul>
+                  <li><a href="#">Annual Report</a></li>
+                  <li><a href="#">Audited Financial Report</a></li>
+                  <li><a href="#">Financial Statement</a></li>
+              </ul>
+          </div>
+          <div class="footer-section links">
+              <h4>More Information</h4>
+              <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Sitemap</a></li>
+                  <li><a href="#">Cookie</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Award & Recognition</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Public Holiday</a></li>
+              </ul>
+          </div>
+          <div class="footer-section newsletter">
+              <h4>Subscribe Newsletter</h4>
+              <form action="#" class="newsletter-form">
+                  <input type="email" placeholder="Enter Email Here" required>
+                  <button type="submit">Submit</button>
+              </form>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>All rights reserved © 2024</p>
+      </div>
+      <div class="back-to-top">
+          <a href="#"><img src="../img/img-footer/arrow-to-top.png" alt="Back to Top" class="back-to-top-icon"></a>
+      </div>
+    </footer>
+    <script>
+        // In your loadContent function
+        function loadContent(page) {
+            if (page === 'savings-account') {
+                fetch('savings-account.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.querySelector('main').innerHTML = html;
+                    });
+            }
+            // Handle other pages...
+        }
+    </script>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

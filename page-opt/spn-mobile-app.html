@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathapana Mobile</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+        
+        .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        }
+        h1 {
+            color: #0056b3;
+        }
+        h2 {
+            color: #0056b3;
+        }
+        .description {
+            margin-bottom: 20px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+        .feature {
+            text-align: center;
+            width: 30%;
+        }
+        .feature img {
+            width: 70px;
+            height: 70px;
+        }
+        h2 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .feature h3 {
+            margin-bottom: 10px;
+            color: #0056b3;
+            font-size: 24px;
+        }
+.special-features {
+margin: 0 auto;
+padding: 20px;
+}
+
+.special-features h2 {
+    color: #044875;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.features-container {
+    display: flex;
+    gap: 20px;
+}
+
+.mobile-preview {
+    flex: 1;
+}
+
+.mobile-preview img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 30px;
+
+}
+
+.feature-list {
+    padding-top: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 10px;
+    
+}
+
+.list {
+    font-weight: bold;
+    color: #0056b3;
+    background-color: #f0f8ff;
+    border: 1px solid #3498db;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.list:hover {
+    background-color: #e6f3ff;
+}
+
+.list.active {
+    background-color: #3498db;
+    color: white;
+}
+
+.list-details {
+    background-color: #e6f3ff;
+    border: 1px solid #3498db;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    display: none;
+}
+
+.banking-features {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+margin-bottom: 30px;
+}
+
+       
+.feature-item {
+    text-align: center;
+    /* background-color: #f0f8ff; */
+    border-radius: 10px;
+    padding: 15px;
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+}
+
+.feature-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.feature-item h3 {
+    color: #0056b3;
+    margin-bottom: 5px;
+}
+
+.feature-item p {
+    font-size: 0.9em;
+    color: #333;
+}
+.banking-features {
+    margin-bottom: 0; 
+    padding-bottom: 0;
+}
+
+.feature-item {
+    margin-bottom: 0;
+}
+
+.video-container {
+    margin-top: 0; /* Remove any space above the video */
+    margin-bottom: 20px; /* Keep the space below the video */
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio */
+    height: 0; /* Set height to 0 to work with padding-bottom */
+    overflow: hidden;
+}
+
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+          <div class="left">
+            <span>Premier</span>
+            <span>Personal Banking</span>
+            <span>Business Portal</span>
+          </div>
+          <div class="right">
+            <span><a href="./page-on-topbar/about_us.html">About Us</a></span>
+            <span>Help Center</span>
+            <span>Postcard</span>
+            
+          </div>
+        </div>
+        <div class="main-header">
+          <a href="../index.html" class="logo-link">
+            <img src="../img/STPN_Logo_Horiz_CMYK_FA-01.png" alt="Company Logo" class="logo">
+          </a>
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li class="nav-item personal">
+                <a href="#" class="nav-link">PERSONAL </a>
+                <ul class="dropdown-menu">
+                  <li><a href="./page-opt/open_saving.html" class="dropdown-item">Saving Account</a></li>
+                  <li><a href="#" class="dropdown-item"> Credits</a></li>
+                  <li><a href="#" class="dropdown-item"> Term Deposits</a></li>
+                  <li><a href="#" class="dropdown-item">Cash Management</a></li>
+                  <li><a href="#" class="dropdown-item">Service</a></li>
+                  <li><a href="#" class="dropdown-item">Trade Finance</a></li>
+                  <li><a href="#" class="dropdown-item">Securities & Trust Services</a></li>
+                  <li><a href="#" class="dropdown-item">Corporate Agent Life Insurance Service</a></li>
+                  <li><a href="#" class="dropdown-item">card</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">BUSINESS</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Credits</a></li>
+                  <li><a href="#" class="dropdown-item">Deposits</a></li>
+                  <li><a href="#" class="dropdown-item">Cash Management</a></li>
+                  <li><a href="#" class="dropdown-item">Express Banking Service</a></li>
+                  <li><a href="#" class="dropdown-item">Trade Finance</a></li>
+                  <li><a href="#" class="dropdown-item">Securities & Trust Services</a></li>
+                  <li><a href="#" class="dropdown-item">Corporate Agent Life Insurance Service</a></li>
+                  <li><a href="#" class="dropdown-item">Financial Health Check</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Digital Banking</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Sathapana MOBILE</a></li>
+                  <li><a href="#" class="dropdown-item">Sathapana Rewards</a></li>
+                  <li><a href="#" class="dropdown-item">Security Tips</a></li>
+                  <li><a href="#" class="dropdown-item">Mobile</a></li>
+                  <li><a href="#" class="dropdown-item">S2Biz</a></li>
+                  <li><a href="#" class="dropdown-item">Sathapana ePayroll</a></li>
+                  <li><a href="#" class="dropdown-item">Sathapana Gateway</a></li>
+                  <li><a href="#" class="dropdown-item">ATM Service</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Women In Business</a>
+               
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Promotion</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Credits</a></li>
+                  <li><a href="#" class="dropdown-item">Deposits</a></li>
+                  <li><a href="#" class="dropdown-item">Cash Management</a></li>
+                  <li><a href="#" class="dropdown-item">Funds Transfers</a></li>
+                  <li><a href="#" class="dropdown-item">Trade Finance</a></li>
+                  <li><a href="#" class="dropdown-item">Securities & Trust Services</a></li>
+                  <li><a href="#" class="dropdown-item">Corporate Agent Life Insurance Service</a></li>
+                  <li><a href="#" class="dropdown-item">Financial Health Check</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">New</a>
+              </li>
+              <li class="nav-item">
+                <input type="text" class="search-input" placeholder="Search" style="display: none;">
+                <img src="../img/hompage_icon/search-icon.png" alt="Search" class="search-icon" style="width: 30px; height: 30px;
+                  " onclick="showSearchInput()" >
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="../img/banner-consol/mobile-app-banner.png" alt="img-mobile" width="100%" height="100%">
+    </div>
+
+    <section class="control"></section>
+        <div class="container">
+            <h1>Sathapana Mobile</h1>
+            <p class="description">Sathapana Mobile is designed with a user-friendly mobile app experience to meet the everyday needs of Sathapana Bank customers.</p>
+            
+            <h2>Why Sathapana Mobile</h2>
+            <div class="features">
+                <div class="feature">
+                    <img src="../img/hompage_icon/Group-603.jpg" alt="Secure">
+                    <h3>Secure</h3>
+                    <p>Well-secured system to protect your information</p>
+                </div>
+                <div class="feature">
+                    <img src="../img/hompage_icon/Group-215.jpg" alt="Fast">
+                    <h3>Fast</h3>
+                    <p>Perform your banking services in real-time</p>
+                </div>
+                <div class="feature">
+                    <img src="../img/hompage_icon/easy.png" alt="Easy">
+                    <h3>Easy</h3>
+                    <p>Simple and convenient banking experience</p>
+                </div>
+            </div>
+            <div class="special-features" id="specialFeatures">
+                <h2>Special Features from Sathapana Mobile</h2>
+                <div class="features-container">
+                    <div class="mobile-preview">
+                        <img src="../img/hompage_icon/image-54.png" alt="Mobile Preview">
+                    </div>
+                    <div class="feature-list">
+                        <div class="list" data-feature="onlineAccountOpening">Online Account Opening</div>
+                        <div class="list" data-feature="specialAccountNumber">Special Account Number</div>
+                        <div class="list" data-feature="createTermDepositAccount">Create Term Deposit Account</div>
+                        <div class="list" data-feature="requestLoan">Request Loan</div>
+                        <div class="list" data-feature="moneyGift">Money Gift</div>
+                        <div class="list" data-feature="sathabanaPay">Sathapana Pay</div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Features for Your Everyday Banking Needs</h2>
+            <div class="banking-features">
+                <div class="feature-item">
+                    <img src="../img/hompage_icon/icon-account.png" alt="Account">
+                    <h3>Account</h3>
+                    <p>View account history of up to 180 days in a single touch.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="../img/hompage_icon/icon-sathapana-transfer.png" alt="Transfer">
+                    <h3>Transfer</h3>
+                    <p>Transfer to local via KHQR and international partner.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="../img/hompage_icon/icon-cards.png" alt="Cards">
+                    <h3>Cards</h3>
+                    <p>Manage your card simpler and faster.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="../img/hompage_icon/icon-sathapana-pay.png" alt="Sathapana Pay">
+                    <h3>Sathapana Pay</h3>
+                    <p>Pay with Sathapana QR at all Sathapana merchants.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="../img/hompage_icon/icon-bill.png" alt="Bill Payment">
+                    <h3>Bill Payment</h3>
+                    <p>Pay online utility bills anytime.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="../img/hompage_icon/icon-mobile-topup.png" alt="Mobile Top Up">
+                    <h3>Mobile Top Up</h3>
+                    <p>Make instant balance top-up anytime, anywhere.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="../img/hompage_icon/icon-withdraw.png" alt="Withdraw">
+                    <h3>Withdraw</h3>
+                    <p>Withdraw cash at ATM without using a card and we can send code through Sathapana Mobile.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="../img/hompage_icon/icon-virtual-card.png" alt="Virtual Card">
+                    <h3>Virtual Card</h3>
+                    <p>Instant issuing on Sathapana Mobile and can be used safely online.</p>
+                </div>
+                
+            </div>
+            
+        </div>
+       
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/ORoA0LBGj2w?si=AAnpIAefgXL9ywXF" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <div class="banner-buttom">
+        <img src="../img/banner-consol/spn-mobile-banner.png" alt="banner" width="100%" height="100%">
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section logo-social">
+                <img src="../img/img-footer/footer-logo.png" alt="Sathapana Bank Logo" class="logo">
+                <div class="social-icons">
+                    <a href="#"><img src="../img/img-footer/fb.png" alt="Facebook" class="social-icon"></a>
+                    <a href="#"><img src="../img/img-footer/linkin.png" alt="LinkedIn" class="social-icon"></a>
+                    <a href="#"><img src="../img/img-footer/yt-spn.png" alt="YouTube" class="social-icon"></a>
+                    <a href="#"><img src="../img/img-footer/tiktok.png" alt="TikTok" class="social-icon"></a>
+                    <a href="#"><img src="../img/img-footer/telegram.png" alt="Telegram" class="social-icon"></a>
+                </div>
+                <div class="certification">
+                    <img src="../img/img-footer/sisa.png" alt="SISA">
+                    
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h4>Banking Service</h4>
+                <ul>
+                    <li><a href="#">Personal</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Digital</a></li>
+                    <li><a href="#">Cash Management</a></li>
+                    <li><a href="#">Merchant Listing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h4>Explore Sathapana</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Locator</a></li>
+                    <li><a href="#">Calculator</a></li>
+                    <li><a href="#">CSR</a></li>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h4>Investor Relations</h4>
+                <ul>
+                    <li><a href="#">Annual Report</a></li>
+                    <li><a href="#">Audited Financial Report</a></li>
+                    <li><a href="#">Financial Statement</a></li>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h4>More Information</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Cookie</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Award & Recognition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Public Holiday</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h4>Subscribe Newsletter</h4>
+                <form action="#" class="newsletter-form">
+                    <input type="email" placeholder="Enter Email Here" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>All rights reserved © 2024</p>
+        </div>
+        <div class="back-to-top">
+            <a href="#"><img src="../img/img-footer/arrow-to-top.png" alt="Back to Top" class="back-to-top-icon"></a>
+        </div>
+      </footer>
+
+    <script src="../scripts.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const features = document.querySelectorAll('.list');
+    const featureDetails = {
+        onlineAccountOpening: "Easily open an online account with Sathapana Mobile without the need to visit a branch.",
+        specialAccountNumber: "Get your preferred special account number easily through Sathapana Mobile.",
+        createTermDepositAccount: "With Sathapana Mobile, create a term deposit account in seconds and enjoy high interest rates for your chosen period, ranging from 3 to 60 months.",
+        requestLoan: "Sathapana Mobile has made applying for loans simpler than ever. All you need to do is fill out our online request form for a Personal Loan, Flexi Housing Loan, or Auto Loan.",
+        moneyGift: "Sathapana Mobile allows you to conveniently send gifts to multiple friends and family members simultaneously, while also providing access to your transaction history.",
+        sathabanaPay: "Sathapana Mobile makes it effortless to make transfers, pay at merchant outlets, and complete cross-border payments by simply scanning QR codes."
+    };
+
+    features.forEach(feature => {
+        feature.addEventListener('click', function() {
+            const featureKey = this.getAttribute('data-feature');
+            const detailsElement = document.querySelector('.feature-details');
+            
+            if (detailsElement) {
+                detailsElement.remove();
+            }
+
+            features.forEach(f => f.classList.remove('active'));
+            this.classList.add('active');
+
+            const newDetailsElement = document.createElement('div');
+            newDetailsElement.className = 'feature-details';
+            newDetailsElement.textContent = featureDetails[featureKey];
+            this.parentNode.insertBefore(newDetailsElement, this.nextSibling);
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
