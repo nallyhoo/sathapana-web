@@ -6,7 +6,7 @@ A responsive static website for Sathapana Bank, showcasing banking services, pro
 
 This project is a front-end website built for Sathapana Bank, featuring a modern design with sections for banking services, promotions, features, and more. It includes a slideshow, navigation menus, and responsive layouts.
 
-Additionally, there is a separate React-based frontend application in the `new/my-frontend-app/` directory, which appears to be a modernized version using Vite and TypeScript.
+
 
 ## Features
 
